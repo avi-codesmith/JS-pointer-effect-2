@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  background-color: #ddd;
+  color: royalblue;
+  text-transform: uppercase;
+  user-select: none;
+  font-size: 65px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98.3vh;
+}
+
+span {
+  position: relative;
+  cursor: pointer;
+}
+
+.cursor {
+  width: 120px;
+  height: 120px;
+  border: 2px solid royalblue;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.hover-effect {
+  color: #ddd;
+  -webkit-text-stroke: 2px royalblue;
+  z-index: 999;
+}
+
+.cursor-active {
+  background-color: rgb(178, 196, 249);
+  z-index: -1;
+}
